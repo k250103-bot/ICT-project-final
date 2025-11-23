@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maintenance Calories Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <div class="heading">
+          <div class="left_heading">
+            <img class="logoImg" src="/Plant1.png" alt="" />
+          </div>
+          <div class="right_heading">
+            <h1>Maintenance Calorie Calculator</h1>
+            <h4>Get In Shape With Us.</h4>
+          </div>
+        </div>
+      </header>
+      <div class="mainBody">
+        <div class="leftSide">
+          <form>
+            <div class="inputField">
+              <h4>Age (Years)</h4>
+              <input id="age" type="text" placeholder="Enter Your Age" />
+            </div>
+            <div class="inputField">
+              <h4>Height (cm)</h4>
+              <input id="height" type="text" placeholder="Enter Your Height" />
+            </div>
+            <div class="inputField">
+              <h4>Weight (kg)</h4>
+              <input id="weight" type="text" placeholder="Enter Your Weight" />
+            </div>
+            <div class="inputField" id="gender">
+              <h4>Gender</h4>
+              <select name="gender" id="genderInput">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div class="inputField" id="activity">
+              <h4>Activity Level</h4>
+              <select name="activty" id="activityInput">
+                <option value="veryActive">Very Active</option>
+                <option value="Active">Active</option>
+                <option value="Normal">Normal</option>
+                <option value="noActivity">No Activity</option>
+              </select>
+            </div>
+            <div class="inputField">
+              <input class="calculateBtn" type="submit" value="Calculate" />
+            </div>
+          </form>
+        </div>
+        <div class="rightSide">
+          <div class="display">
+            <h4>Maintenance Calories:</h4>
+            <h4 id="maintain" class="colorGreen"></h4>
+          </div>
+          <div class="display">
+            <h4>Cutting Calories:</h4>
+            <h4 id="cut" class="colorGreen"></h4>
+          </div>
+          <div class="display">
+            <h4>Bulking Calories:</h4>
+            <h4 id="bulk" class="colorGreen"></h4>
+          </div>
+          <div class="note">
+            <h4>Note:</h4>
+            <h5>
+              These values are variable and they change according to your weight
+              changes. It is advised to weigh yourself and take this test every
+              week for optimal growth.
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <h3>Developed By:</h3>
+        <h3>Ali Farhan,</h3>
+        <h3>Shayan Ahmed,</h3>
+        <h3>Muhammad Arham Hashmi</h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
